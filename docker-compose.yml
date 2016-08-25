@@ -1,0 +1,12 @@
+nginx:
+  build: docker/nginx
+  ports:
+    - "8000:80"
+  links:
+    - go
+  restart: always
+go:
+  build: docker/go
+  volumes:
+    - .:/server
+  restart: always

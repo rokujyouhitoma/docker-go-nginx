@@ -1,0 +1,28 @@
+
+```
+docker-machine start default
+```
+
+```
+docker-compose up -d
+```
+
+
+```
+curl localhost:8080
+```
+
+
+# 動作確認用コマンド
+
+```
+docker-machine ssh
+```
+
+```
+docker run -d -p 8000:8000 go-server
+```
+
+```
+docker build -t <someone> .
+```
